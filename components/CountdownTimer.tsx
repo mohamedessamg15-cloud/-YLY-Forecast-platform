@@ -23,44 +23,40 @@ function getTimeLeft(targetDate: string): TimeLeft {
 function Digit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="glass-card px-2 py-1 min-w-[2.2rem] text-center">
-        <span className="font-display font-bold text-sm text-neon-green tabular-nums" suppressHydrationWarning>
+      <div className="glass-card px-1.5 py-0.5 min-w-[1.8rem] text-center">
+        <span className="font-display font-bold text-xs text-neon-green tabular-nums" suppressHydrationWarning>
           {String(value).padStart(2, '0')}
         </span>
       </div>
-      <span className="text-[9px] text-white/30 tracking-wide mt-0.5">{label}</span>
+      <span className="text-[8px] text-white/30 tracking-wide mt-0.5">{label}</span>
     </div>
   );
 }
 
 export default function CountdownTimer({ targetDate }: { targetDate: string }) {
-  // Start with null to avoid SSR/client mismatch — only calculate on client
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Calculate immediately on mount (client only)
     setTimeLeft(getTimeLeft(targetDate));
     setMounted(true);
-
     const id = setInterval(() => setTimeLeft(getTimeLeft(targetDate)), 1000);
     return () => clearInterval(id);
   }, [targetDate]);
 
-  // Render nothing on server / before mount to avoid hydration mismatch
   if (!mounted || !timeLeft) {
     return (
-      <div className="flex items-end gap-1">
-        <div className="glass-card px-2 py-1 min-w-[2.2rem] text-center">
-          <span className="font-display font-bold text-sm text-neon-green tabular-nums">--</span>
+      <div className="flex items-end gap-0.5">
+        <div className="glass-card px-1.5 py-0.5 min-w-[1.8rem] text-center">
+          <span className="font-display font-bold text-xs text-neon-green tabular-nums">--</span>
         </div>
-        <span className="text-neon-green/60 font-display font-bold text-xs mb-3">:</span>
-        <div className="glass-card px-2 py-1 min-w-[2.2rem] text-center">
-          <span className="font-display font-bold text-sm text-neon-green tabular-nums">--</span>
+        <span className="text-neon-green/60 font-display font-bold text-[10px] mb-2">:</span>
+        <div className="glass-card px-1.5 py-0.5 min-w-[1.8rem] text-center">
+          <span className="font-display font-bold text-xs text-neon-green tabular-nums">--</span>
         </div>
-        <span className="text-neon-green/60 font-display font-bold text-xs mb-3">:</span>
-        <div className="glass-card px-2 py-1 min-w-[2.2rem] text-center">
-          <span className="font-display font-bold text-sm text-neon-green tabular-nums">--</span>
+        <span className="text-neon-green/60 font-display font-bold text-[10px] mb-2">:</span>
+        <div className="glass-card px-1.5 py-0.5 min-w-[1.8rem] text-center">
+          <span className="font-display font-bold text-xs text-neon-green tabular-nums">--</span>
         </div>
       </div>
     );
@@ -77,12 +73,17 @@ export default function CountdownTimer({ targetDate }: { targetDate: string }) {
   }
 
   return (
-    <div className="flex items-end gap-1">
-      {timeLeft.days > 0 && <Digit value={timeLeft.days} label="ي" />}
+    <div className="flex items-end gap-0.5">
+      {timeLeft.days > 0 && (
+        <>
+          <Digit value={timeLeft.days} label="ي" />
+          <span className="text-neon-green/60 font-display font-bold text-[10px] mb-2">:</span>
+        </>
+      )}
       <Digit value={timeLeft.hours} label="س" />
-      <span className="text-neon-green/60 font-display font-bold text-xs mb-3">:</span>
+      <span className="text-neon-green/60 font-display font-bold text-[10px] mb-2">:</span>
       <Digit value={timeLeft.minutes} label="د" />
-      <span className="text-neon-green/60 font-display font-bold text-xs mb-3">:</span>
+      <span className="text-neon-green/60 font-display font-bold text-[10px] mb-2">:</span>
       <Digit value={timeLeft.seconds} label="ث" />
     </div>
   );

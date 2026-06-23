@@ -31,65 +31,75 @@ export default function MatchCard({ match, index }: { match: Match; index: numbe
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1, ease: 'easeOut' }}
-      whileHover={{ y: -6, transition: { duration: 0.2 } }}
+      whileHover={{ y: -4, transition: { duration: 0.2 } }}
       className="group"
     >
       <Link href={`/match/${match.id}`} className="block">
-        <div className="glass-card overflow-hidden cursor-pointer transition-all duration-300 group-hover:border-neon-green/30"
+        <div
+          className="glass-card overflow-hidden cursor-pointer transition-all duration-300 group-hover:border-neon-green/30"
           style={{ borderColor: 'rgba(57,255,20,0.08)' }}
         >
           {/* Header bar */}
-          <div className="px-5 py-3 flex items-center justify-between"
+          <div
+            className="px-4 py-2 flex items-center justify-between flex-wrap gap-1"
             style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)' }}
           >
-            <span className="text-xs font-display font-semibold text-white/40">
+            <span className="text-xs font-display font-semibold text-white/40 truncate">
               المجموعة {match.group} · {match.round.split('—')[0].trim()}
             </span>
-            <span className="text-xs text-white/30">
+            <span className="text-xs text-white/30 truncate">
               {match.city}، {match.country}
             </span>
           </div>
 
-          {/* Teams */}
-          <div className="p-6 flex items-center justify-between gap-4">
-            {/* Team A */}
-            <div className="flex-1 flex flex-col items-center gap-3">
-              <div className="relative w-20 h-14 sm:w-24 sm:h-16 lg:w-28 lg:h-20 rounded-md overflow-hidden shadow-lg border-2 border-white/10 group-hover:border-wc-cyan/50 transition-colors bg-white/5">
-                {getFlagUrl(match.teamA.flagCode) && (
-                  <Image src={getFlagUrl(match.teamA.flagCode)} alt={match.teamA.name} fill className="object-cover" />
-                )}
-              </div>
-              <h3 className="font-display font-black text-lg text-center tracking-wide">{match.teamA.name}</h3>
-              <span className="text-[10px] text-white/40 tracking-widest">المصنف #{match.teamA.ranking}</span>
-              <FormDots form={match.teamA.form} />
-            </div>
+          {/* Teams - vertical on mobile, horizontal on sm+ */}
+          <div className="p-4 sm:p-6">
 
-            {/* VS Badge */}
-            <div className="px-4 py-2 rounded-xl bg-black/40 border border-white/5 flex flex-col items-center">
+            {/* Countdown centered at top */}
+            <div className="flex justify-center mb-3">
               <CountdownTimer targetDate={match.date} />
-              <span className="text-xl font-display font-black text-wc-magenta italic mt-2">VS</span>
             </div>
 
-            {/* Team B */}
-            <div className="flex-1 flex flex-col items-center gap-3">
-              <div className="relative w-20 h-14 sm:w-24 sm:h-16 lg:w-28 lg:h-20 rounded-md overflow-hidden shadow-lg border-2 border-white/10 group-hover:border-wc-green/50 transition-colors bg-white/5">
-                {getFlagUrl(match.teamB.flagCode) && (
-                  <Image src={getFlagUrl(match.teamB.flagCode)} alt={match.teamB.name} fill className="object-cover" />
-                )}
+            {/* Teams row */}
+            <div className="flex items-center justify-between gap-2">
+              {/* Team A */}
+              <div className="flex flex-col items-center gap-2 flex-1 min-w-0">
+                <div className="relative w-14 h-10 sm:w-20 sm:h-14 rounded-md overflow-hidden shadow-lg border-2 border-white/10 group-hover:border-wc-cyan/50 transition-colors bg-white/5 flex-shrink-0">
+                  {getFlagUrl(match.teamA.flagCode) && (
+                    <Image src={getFlagUrl(match.teamA.flagCode)} alt={match.teamA.name} fill className="object-cover" />
+                  )}
+                </div>
+                <h3 className="font-display font-black text-sm sm:text-base text-center leading-tight w-full px-1">{match.teamA.name}</h3>
+                <span className="text-[9px] sm:text-[10px] text-white/40 tracking-widest">#{match.teamA.ranking}</span>
+                <FormDots form={match.teamA.form} />
               </div>
-              <h3 className="font-display font-black text-lg text-center tracking-wide">{match.teamB.name}</h3>
-              <span className="text-[10px] text-white/40 tracking-widest">المصنف #{match.teamB.ranking}</span>
-              <FormDots form={match.teamB.form} />
+
+              {/* VS Badge */}
+              <div className="flex-shrink-0 px-2 sm:px-4 py-2 rounded-xl bg-black/40 border border-white/5 flex flex-col items-center">
+                <span className="text-lg sm:text-xl font-display font-black text-wc-magenta italic">VS</span>
+              </div>
+
+              {/* Team B */}
+              <div className="flex flex-col items-center gap-2 flex-1 min-w-0">
+                <div className="relative w-14 h-10 sm:w-20 sm:h-14 rounded-md overflow-hidden shadow-lg border-2 border-white/10 group-hover:border-wc-green/50 transition-colors bg-white/5 flex-shrink-0">
+                  {getFlagUrl(match.teamB.flagCode) && (
+                    <Image src={getFlagUrl(match.teamB.flagCode)} alt={match.teamB.name} fill className="object-cover" />
+                  )}
+                </div>
+                <h3 className="font-display font-black text-sm sm:text-base text-center leading-tight w-full px-1">{match.teamB.name}</h3>
+                <span className="text-[9px] sm:text-[10px] text-white/40 tracking-widest">#{match.teamB.ranking}</span>
+                <FormDots form={match.teamB.form} />
+              </div>
             </div>
           </div>
 
           {/* Footer */}
-          <div className="p-4 bg-black/30 border-t border-white/5 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="text-sm">🏟️</span>
-              <span className="text-xs text-white/50">{match.stadium}</span>
+          <div className="px-4 py-3 bg-black/30 border-t border-white/5 flex items-center justify-between">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-sm flex-shrink-0">🏟️</span>
+              <span className="text-xs text-white/50 truncate">{match.stadium}</span>
             </div>
-            <span className="text-xs font-display font-bold text-wc-cyan group-hover:text-wc-green transition-colors">
+            <span className="text-xs font-display font-bold text-wc-cyan group-hover:text-wc-green transition-colors flex-shrink-0 mr-2">
               حلّل وتوقّع ←
             </span>
           </div>

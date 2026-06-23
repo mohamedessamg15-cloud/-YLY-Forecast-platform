@@ -65,6 +65,7 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .glass-card-neon {
@@ -74,6 +75,7 @@ body {
   border: 1px solid rgba(57,255,20,0.2);
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(57,255,20,0.05), inset 0 0 20px rgba(57,255,20,0.02);
+  overflow: hidden;
 }
 
 /* ─── Neon Text ─── */
