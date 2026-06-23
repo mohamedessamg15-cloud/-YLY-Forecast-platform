@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ─── */
+:root {
+  --neon-green: #39FF14;
+  --neon-blue: #00F0FF;
+  --neon-purple: #BF5AF2;
+  --bg-primary: #070B14;
+  --bg-secondary: #0D1220;
+  --bg-card: #111827;
+  --border-subtle: rgba(255,255,255,0.06);
+  --border-neon: rgba(57,255,20,0.3);
+}
+
+/* ─── Base Reset & Globals ─── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(57,255,20,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,240,255,0.04) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+/* ─── Scan-Line Overlay ─── */
+.scan-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb {
+  background: rgba(57,255,20,0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(57,255,20,0.6); }
+
+/* ─── Glassmorphism Cards ─── */
+.glass-card {
+  background: rgba(17,24,39,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+}
+
+.glass-card-neon {
+  background: rgba(17,24,39,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(57,255,20,0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(57,255,20,0.05), inset 0 0 20px rgba(57,255,20,0.02);
+}
+
+/* ─── Neon Text ─── */
+.neon-text-green {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px rgba(57,255,20,0.8), 0 0 20px rgba(57,255,20,0.4);
+}
+
+.neon-text-blue {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px rgba(0,240,255,0.8), 0 0 20px rgba(0,240,255,0.4);
+}
+
+/* ─── Neon Gradient Text ─── */
+.neon-gradient-text {
+  background: linear-gradient(135deg, var(--neon-green) 0%, var(--neon-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wc-gradient-text {
+  background: linear-gradient(to right, #00F0FF, #39FF14, #FF0055, #6B00FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 100%;
+  animation: gradientTextMove 6s ease infinite;
+}
+
+/* ─── Grid Background ─── */
+.wc26-bg {
+  background-color: #000000;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(107, 0, 255, 0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 0, 85, 0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(0, 240, 255, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(57, 255, 20, 0.1) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* ─── Trophy Float ─── */
+.trophy-float {
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(57,255,20,0.4)) drop-shadow(0 0 60px rgba(57,255,20,0.15));
+}
+
+/* ─── CTA Button ─── */
+.btn-cta {
+  @apply px-6 py-3 rounded-xl font-display font-black text-white transition-all duration-300;
+  background: linear-gradient(135deg, theme('colors.wc.purple'), theme('colors.wc.magenta'));
+  box-shadow: 0 4px 15px rgba(107, 0, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-cta:hover::before { opacity: 1; }
+.btn-cta:hover {
+  box-shadow: 0 8px 25px rgba(255, 0, 85, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-cta:disabled {
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.3);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-cta.pulsing {
+  animation: ctaPulse 2s ease-in-out infinite;
+}
+
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(57,255,20,0.3); }
+  50% { box-shadow: 0 0 40px rgba(57,255,20,0.7), 0 0 80px rgba(0,240,255,0.3); }
+}
+
+/* ─── Score Display ─── */
+.score-digit {
+  font-family: var(--font-rajdhani), sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.2s ease;
+}
+
+/* ─── Range Sliders ─── */
+.neon-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.neon-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--neon-green);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(57,255,20,0.6);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.neon-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(57,255,20,0.9);
+}
+
+.neon-slider-blue::-webkit-slider-thumb {
+  background: var(--neon-blue);
+  box-shadow: 0 0 10px rgba(0,240,255,0.6);
+}
+
+.neon-slider-blue::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 20px rgba(0,240,255,0.9);
+}
+
+/* ─── Form Badge ─── */
+.form-badge-W { background: rgba(57,255,20,0.2); color: #39FF14; border: 1px solid rgba(57,255,20,0.4); }
+.form-badge-D { background: rgba(99,110,138,0.2); color: #636e8a; border: 1px solid rgba(99,110,138,0.4); }
+.form-badge-L { background: rgba(255,59,48,0.2); color: #FF3B30; border: 1px solid rgba(255,59,48,0.4); }
+
+/* ─── Animations ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2px, 1px); }
+  20% { transform: translate(2px, -1px); }
+  30% { transform: translate(-1px, 2px); }
+  40% { transform: translate(1px, -2px); }
+  50% { transform: translate(0, 0); }
+}
+
+@keyframes scanReveal {
+  from { clip-path: inset(0 0 100% 0); }
+  to { clip-path: inset(0 0 0% 0); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes processingPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.animate-count-up { animation: countUp 0.4s ease-out forwards; }
+.animate-scan-reveal { animation: scanReveal 0.8s ease-out forwards; }
+.animate-processing { animation: processingPulse 1.5s ease-in-out infinite; }
+
+/* ─── Player Card ─── */
+.player-card {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.player-card:hover {
+  border-color: rgba(57,255,20,0.4);
+  background: rgba(57,255,20,0.05);
+  transform: translateY(-2px);
+}
+
+.player-card.selected {
+  border-color: var(--neon-green);
+  background: rgba(57,255,20,0.1);
+  box-shadow: 0 0 16px rgba(57,255,20,0.3);
+}
+
+/* ─── H2H Timeline ─── */
+.timeline-item {
+  border-left: 2px solid rgba(57,255,20,0.2);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neon-green);
+  box-shadow: 0 0 8px rgba(57,255,20,0.6);
+}
+
+/* ─── Chart Overrides ─── */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgba(255,255,255,0.05) !important;
+}
+.recharts-text { fill: rgba(255,255,255,0.5) !important; }
+
+/* ─── Reveal Card ─── */
+.reveal-card {
+  background: linear-gradient(135deg, rgba(17,24,39,0.95) 0%, rgba(13,18,32,0.95) 100%);
+  border: 1px solid rgba(57,255,20,0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(57,255,20,0.1), 0 0 80px rgba(0,240,255,0.05);
+}
+
+/* ─── Progress Bar ─── */
+.progress-bar {
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+  border-radius: 2px;
+  transition: width 0.8s ease;
+  box-shadow: 0 0 8px rgba(57,255,20,0.6);
+}
