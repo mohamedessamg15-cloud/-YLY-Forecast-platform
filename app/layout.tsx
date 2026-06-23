@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Cairo } from 'next/font/google';
 import './globals.css';
 import IntroAnimation from '@/components/ui/IntroAnimation';
@@ -12,6 +12,13 @@ const cairo = Cairo({
   variable: '--font-cairo',
   display: 'swap',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   title: 'توقعات كأس العالم 2026',
@@ -30,7 +37,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl" className={`${cairo.variable}`}>
       <body
         className="bg-bg-primary text-white antialiased font-body overflow-x-hidden"
-        style={{ position: 'relative', minHeight: '100vh' }}
+        style={{ position: 'relative', minHeight: '100vh', maxWidth: '100vw' }}
         suppressHydrationWarning
       >
         {/* Looping video background */}

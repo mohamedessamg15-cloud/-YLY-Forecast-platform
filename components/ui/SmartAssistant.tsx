@@ -75,7 +75,7 @@ export default function SmartAssistant() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 w-[350px] h-[500px] z-50 glass-card rounded-2xl flex flex-col border border-white/10 shadow-2xl overflow-hidden bg-bg-secondary/95 backdrop-blur-xl"
+          className="fixed bottom-24 right-2 left-2 sm:left-auto sm:right-6 sm:w-[350px] h-[500px] z-50 glass-card rounded-2xl flex flex-col border border-white/10 shadow-2xl overflow-hidden bg-bg-secondary/95 backdrop-blur-xl"
           >
             {/* Header */}
             <div className="p-4 bg-black/40 border-b border-white/10 flex items-center gap-3">
