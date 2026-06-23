@@ -59,7 +59,7 @@ export default function PredictionPanel({ match, hook }: PredictionPanelProps) {
             <h3 className="font-display font-bold text-white text-xl mb-1">النتيجة النهائية</h3>
             <p className="text-xs text-white/30 mb-6">حرّك الأشرطة لتحديد نتيجتك المتوقعة</p>
 
-            <div className="grid grid-cols-3 items-center gap-4">
+            <div className="grid grid-cols-3 items-center gap-2 sm:gap-4">
               <ScoreSlider
                 value={state.scoreA}
                 onChange={setScoreA}
@@ -69,10 +69,10 @@ export default function PredictionPanel({ match, hook }: PredictionPanelProps) {
               />
               {/* Score display */}
               <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="score-digit" style={{ fontSize: '3.5rem' }}>{state.scoreA}</span>
-                  <span className="font-display font-light text-white/20 text-4xl">-</span>
-                  <span className="score-digit" style={{ fontSize: '3.5rem', background: 'linear-gradient(180deg, #00F0FF, rgba(0,240,255,0.7))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="score-digit" style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)' }}>{state.scoreA}</span>
+                  <span className="font-display font-light text-white/20 text-2xl sm:text-4xl">-</span>
+                  <span className="score-digit" style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)', background: 'linear-gradient(180deg, #00F0FF, rgba(0,240,255,0.7))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {state.scoreB}
                   </span>
                 </div>
@@ -86,6 +86,7 @@ export default function PredictionPanel({ match, hook }: PredictionPanelProps) {
                 color="blue"
               />
             </div>
+
           </motion.div>
         )}
 

@@ -25,20 +25,20 @@ export default function GlobalNavigation() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 right-0 z-50 glass-card rounded-none border-x-0 border-t-0"
+        className="fixed top-0 left-0 right-0 z-50 glass-card rounded-none border-x-0 border-t-0 overflow-hidden"
         style={{ borderBottom: '1px solid rgba(57,255,20,0.1)' }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <button 
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 h-14 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <button
               onClick={toggleSidebar}
-              className="p-2 -ml-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors focus:outline-none"
+              className="p-2 -ml-1 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors focus:outline-none flex-shrink-0"
             >
               <Menu className="w-6 h-6" />
             </button>
 
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-8 h-10 drop-shadow-lg">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group min-w-0">
+              <div className="relative w-7 h-9 sm:w-8 sm:h-10 drop-shadow-lg flex-shrink-0">
                 <Image
                   src="/trophy-real.png"
                   alt="World Cup Trophy"
@@ -48,14 +48,14 @@ export default function GlobalNavigation() {
                   priority
                 />
               </div>
-              <span className="font-display font-bold text-lg tracking-wide neon-gradient-text hidden sm:block">
+              <span className="font-display font-bold text-base sm:text-lg tracking-wide neon-gradient-text hidden sm:block truncate">
                 كأس العالم 2026
               </span>
             </Link>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-display font-semibold text-white/30 uppercase tracking-wider">
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+            <span className="text-[10px] sm:text-xs font-display font-semibold text-white/30 uppercase tracking-wider hidden xs:block">
               منصة التوقعات
             </span>
             <span className="relative flex h-2 w-2">

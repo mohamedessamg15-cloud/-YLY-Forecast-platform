@@ -40,8 +40,8 @@ export default function H2HChart({ match }: { match: Match }) {
       </h3>
       <p className="text-xs text-white/30 mb-5">نتائج لقاءات كأس العالم التاريخية</p>
 
-      <ResponsiveContainer width="100%" height={200}>
-        <BarChart data={data} barGap={4} barSize={28}>
+      <ResponsiveContainer width="100%" height={160}>
+        <BarChart data={data} barGap={4} barSize={22}>
           <XAxis
             dataKey="year"
             tick={{ fontSize: 11, fill: 'rgba(255,255,255,0.4)', fontFamily: 'Cairo' }}

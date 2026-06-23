@@ -19,9 +19,14 @@
 /* ─── Base Reset & Globals ─── */
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
+  overflow-x: hidden;
+
   background: var(--bg-primary);
   background-image:
     radial-gradient(ellipse 80% 50% at 50% -20%, rgba(57,255,20,0.06) 0%, transparent 60%),
