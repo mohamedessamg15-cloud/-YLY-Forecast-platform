@@ -3,7 +3,7 @@ import type { Match, Team, Player } from './types';
 export const MATCHES: Match[] = [
   {
     id: 'mex-kor',
-    date: '2026-06-11T16:00:00.000Z',
+    date: '2026-06-25T16:00:00.000Z',
     stadium: 'Azteca',
     city: 'Mexico City',
     country: 'Mexico',
@@ -70,7 +70,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'cze-rsa',
-    date: '2026-06-12T16:00:00.000Z',
+    date: '2026-06-25T16:00:00.000Z',
     stadium: 'SoFi Stadium',
     city: 'Los Angeles',
     country: 'USA',
@@ -135,7 +135,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'mex-cze',
-    date: '2026-06-13T16:00:00.000Z',
+    date: '2026-06-25T16:00:00.000Z',
     stadium: 'AT&T Stadium',
     city: 'Dallas',
     country: 'USA',
@@ -201,7 +201,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'kor-rsa',
-    date: '2026-06-14T16:00:00.000Z',
+    date: '2026-06-26T16:00:00.000Z',
     stadium: 'Mercedes-Benz',
     city: 'Atlanta',
     country: 'USA',
@@ -268,7 +268,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'mex-rsa',
-    date: '2026-06-15T16:00:00.000Z',
+    date: '2026-06-26T16:00:00.000Z',
     stadium: 'Gillette Stadium',
     city: 'Boston',
     country: 'USA',
@@ -335,7 +335,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'kor-cze',
-    date: '2026-06-16T16:00:00.000Z',
+    date: '2026-06-26T16:00:00.000Z',
     stadium: 'Lumen Field',
     city: 'Seattle',
     country: 'USA',
@@ -402,7 +402,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'can-sui',
-    date: '2026-06-17T16:00:00.000Z',
+    date: '2026-06-27T16:00:00.000Z',
     stadium: "Levi's Stadium",
     city: 'San Francisco',
     country: 'USA',
@@ -467,7 +467,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'bih-qat',
-    date: '2026-06-18T16:00:00.000Z',
+    date: '2026-06-27T16:00:00.000Z',
     stadium: 'NRG Stadium',
     city: 'Houston',
     country: 'USA',
@@ -532,7 +532,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'can-bih',
-    date: '2026-06-19T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'BC Place',
     city: 'Vancouver',
     country: 'Canada',
@@ -599,7 +599,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'sui-qat',
-    date: '2026-06-20T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'MetLife Stadium',
     city: 'New York',
     country: 'USA',
@@ -665,7 +665,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'can-qat',
-    date: '2026-06-21T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'Azteca',
     city: 'Mexico City',
     country: 'Mexico',
@@ -730,7 +730,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'sui-bih',
-    date: '2026-06-22T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'SoFi Stadium',
     city: 'Los Angeles',
     country: 'USA',
@@ -796,7 +796,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'bra-mar',
-    date: '2026-06-23T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'AT&T Stadium',
     city: 'Dallas',
     country: 'USA',
@@ -893,7 +893,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'sco-hti',
-    date: '2026-06-24T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'Mercedes-Benz',
     city: 'Atlanta',
     country: 'USA',
@@ -960,7 +960,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'bra-sco',
-    date: '2026-06-25T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'Gillette Stadium',
     city: 'Boston',
     country: 'USA',
@@ -1041,7 +1041,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'mar-hti',
-    date: '2026-06-26T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'Lumen Field',
     city: 'Seattle',
     country: 'USA',
@@ -1123,7 +1123,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'bra-hti',
-    date: '2026-06-27T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: "Levi's Stadium",
     city: 'San Francisco',
     country: 'USA',
@@ -1204,7 +1204,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'mar-sco',
-    date: '2026-06-28T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'NRG Stadium',
     city: 'Houston',
     country: 'USA',
@@ -1284,7 +1284,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'usa-aus',
-    date: '2026-06-29T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'BC Place',
     city: 'Vancouver',
     country: 'Canada',
@@ -1350,7 +1350,7 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'par-tur',
-    date: '2026-06-30T16:00:00.000Z',
+    date: '2026-06-undefinedT16:00:00.000Z',
     stadium: 'MetLife Stadium',
     city: 'New York',
     country: 'USA',
@@ -5118,381 +5118,7 @@ export const MATCHES: Match[] = [
         { icon: '⚡', label: 'السرعة القصوى', valueA: '32.8', valueB: '32.9', unit: 'كم/س' }
       ]
   },
-  // ═══════════════════════════════════════════════════════════
-  // الجولة الثالثة (الأخيرة) — 25 يونيو 2026
-  // ═══════════════════════════════════════════════════════════
-  {
-    id: 'ecu-ger',
-    date: '2026-06-25T23:00:00.000Z',
-    stadium: 'MetLife Stadium',
-    city: 'New York / New Jersey',
-    country: 'USA',
-    group: 'E',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'ecu', name: 'الإكوادور', shortName: 'ECU', flag: '🇪🇨', flagCode: 'ec',
-      primaryColor: '#FFD100', ranking: 42, worldCupWins: 0,
-      players: [
-        { id: 'ecu-p1', name: 'E. Hincapié', shortName: 'E. Hincapié', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ecu-p2', name: 'M. Caicedo', shortName: 'M. Caicedo', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ecu-p3', name: 'A. Preciado', shortName: 'A. Preciado', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ecu-p4', name: 'J. Ibarra', shortName: 'J. Ibarra', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ecu-p5', name: 'E. Valencia', shortName: 'E. Valencia', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'L' }, { result: 'W' }]
-    },
-    teamB: {
-      id: 'ger', name: 'ألمانيا', shortName: 'GER', flag: '🇩🇪', flagCode: 'de',
-      primaryColor: '#000000', ranking: 12, worldCupWins: 4,
-      players: [
-        { id: 'ger-p1', name: 'J. Kimmich', shortName: 'J. Kimmich', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ger-p2', name: 'K. Havertz', shortName: 'K. Havertz', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ger-p3', name: 'F. Wirtz', shortName: 'F. Wirtz', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ger-p4', name: 'L. Goretzka', shortName: 'L. Goretzka', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ger-p5', name: 'N. Schlotterbeck', shortName: 'Schlotterbeck', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'W' }]
-    },
-    h2hRecords: [
-      { year: 2006, stage: 'دور المجموعات', highlight: 'فاز الإكوادور 3-0', teamAScore: 3, teamBScore: 0, winner: 'A', goals: 3 },
-      { year: 2014, stage: 'دور المجموعات', highlight: 'فاز الإكوادور 3-2', teamAScore: 3, teamBScore: 2, winner: 'A', goals: 5 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '108', valueB: '113', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '79%', valueB: '88%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '33.1', valueB: '34.5', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'cur-civ',
-    date: '2026-06-25T23:00:00.000Z',
-    stadium: 'Lincoln Financial Field',
-    city: 'Philadelphia',
-    country: 'USA',
-    group: 'E',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'cur', name: 'كوراساو', shortName: 'CUR', flag: '🇨🇼', flagCode: 'cw',
-      primaryColor: '#00208E', ranking: 88, worldCupWins: 0,
-      players: [
-        { id: 'cur-p1', name: 'K. Förster', shortName: 'K. Förster', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'cur-p2', name: 'J. de Nooijer', shortName: 'de Nooijer', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'cur-p3', name: 'L. Amorison', shortName: 'L. Amorison', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'cur-p4', name: 'D. Pieters', shortName: 'D. Pieters', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'cur-p5', name: 'E. Botteghin', shortName: 'Botteghin', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'L' }, { result: 'D' }, { result: 'L' }, { result: 'D' }, { result: 'L' }]
-    },
-    teamB: {
-      id: 'civ', name: 'كوت ديفوار', shortName: 'CIV', flag: '🇨🇮', flagCode: 'ci',
-      primaryColor: '#F77F00', ranking: 47, worldCupWins: 0,
-      players: [
-        { id: 'civ-p1', name: 'S. Kalou', shortName: 'S. Kalou', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'civ-p2', name: 'F. Koné', shortName: 'F. Koné', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'civ-p3', name: 'I. Sangaré', shortName: 'I. Sangaré', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'civ-p4', name: 'S. Fofana', shortName: 'S. Fofana', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'civ-p5', name: 'W. Zaha', shortName: 'W. Zaha', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'W' }, { result: 'D' }]
-    },
-    h2hRecords: [],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '102', valueB: '109', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '72%', valueB: '81%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '32.0', valueB: '33.8', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'jpn-swe',
-    date: '2026-06-25T23:00:00.000Z',
-    stadium: 'AT&T Stadium',
-    city: 'Dallas',
-    country: 'USA',
-    group: 'F',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'jpn', name: 'اليابان', shortName: 'JPN', flag: '🇯🇵', flagCode: 'jp',
-      primaryColor: '#000080', ranking: 17, worldCupWins: 0,
-      players: [
-        { id: 'jpn-p1', name: 'T. Minamino', shortName: 'Minamino', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jpn-p2', name: 'K. Mitoma', shortName: 'K. Mitoma', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jpn-p3', name: 'W. Endo', shortName: 'W. Endo', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jpn-p4', name: 'H. Morita', shortName: 'H. Morita', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jpn-p5', name: 'D. Itakura', shortName: 'D. Itakura', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'D' }, { result: 'W' }]
-    },
-    teamB: {
-      id: 'swe', name: 'السويد', shortName: 'SWE', flag: '🇸🇪', flagCode: 'se',
-      primaryColor: '#006AA7', ranking: 27, worldCupWins: 0,
-      players: [
-        { id: 'swe-p1', name: 'Z. Ibrahimović', shortName: 'Ibrahimović', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'swe-p2', name: 'A. Isak', shortName: 'A. Isak', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'swe-p3', name: 'D. Kulusevski', shortName: 'Kulusevski', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'swe-p4', name: 'E. Forsberg', shortName: 'E. Forsberg', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'swe-p5', name: 'V. Lindelöf', shortName: 'Lindelöf', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'D' }, { result: 'D' }, { result: 'W' }, { result: 'L' }]
-    },
-    h2hRecords: [
-      { year: 2018, stage: 'دور الـ16', highlight: 'فازت السويد 1-0', teamAScore: 0, teamBScore: 1, winner: 'B', goals: 1 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '111', valueB: '108', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '87%', valueB: '83%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '33.4', valueB: '33.9', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'tun-ned',
-    date: '2026-06-25T23:00:00.000Z',
-    stadium: 'GEHA Field at Arrowhead',
-    city: 'Kansas City',
-    country: 'USA',
-    group: 'F',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'tun', name: 'تونس', shortName: 'TUN', flag: '🇹🇳', flagCode: 'tn',
-      primaryColor: '#E70013', ranking: 29, worldCupWins: 0,
-      players: [
-        { id: 'tun-p1', name: 'Y. Msakni', shortName: 'Y. Msakni', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'tun-p2', name: 'H. Aouar', shortName: 'H. Aouar', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'tun-p3', name: 'W. Khazri', shortName: 'W. Khazri', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'tun-p4', name: 'E. Bronn', shortName: 'E. Bronn', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'tun-p5', name: 'M. Dräger', shortName: 'M. Dräger', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'D' }, { result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'D' }]
-    },
-    teamB: {
-      id: 'ned', name: 'هولندا', shortName: 'NED', flag: '🇳🇱', flagCode: 'nl',
-      primaryColor: '#FF6900', ranking: 7, worldCupWins: 0,
-      players: [
-        { id: 'ned-p1', name: 'V. van Dijk', shortName: 'van Dijk', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ned-p2', name: 'M. Depay', shortName: 'M. Depay', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ned-p3', name: 'X. Simons', shortName: 'X. Simons', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ned-p4', name: 'T. Reijnders', shortName: 'Reijnders', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'ned-p5', name: 'D. Dumfries', shortName: 'Dumfries', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'D' }]
-    },
-    h2hRecords: [
-      { year: 1978, stage: 'نهائي', highlight: 'فازت هولندا 2-1', teamAScore: 1, teamBScore: 2, winner: 'B', goals: 3 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '106', valueB: '112', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '81%', valueB: '91%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '32.7', valueB: '34.8', unit: 'كم/س' }
-    ]
-  },
-  // ═══════════════════════════════════════════════════════════
-  // الجولة الثالثة — 26 يونيو 2026
-  // ═══════════════════════════════════════════════════════════
-  {
-    id: 'egy-irn',
-    date: '2026-06-26T06:00:00.000Z',
-    stadium: 'Lumen Field',
-    city: 'Seattle',
-    country: 'USA',
-    group: 'G',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'egy', name: 'مصر', shortName: 'EGY', flag: '🇪🇬', flagCode: 'eg',
-      primaryColor: '#CE1126', ranking: 46, worldCupWins: 0,
-      players: [
-        { id: 'egy-p1', name: 'M. Salah', shortName: 'M. Salah', position: 'FWD', avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mohamed_Salah_2018.jpg/250px-Mohamed_Salah_2018.jpg' },
-        { id: 'egy-p2', name: 'O. Marmoush', shortName: 'O. Marmoush', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'egy-p3', name: 'T. Elneny', shortName: 'T. Elneny', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'egy-p4', name: 'A. Hegazi', shortName: 'A. Hegazi', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'egy-p5', name: 'M. Shobeir', shortName: 'M. Shobeir', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'W' }, { result: 'D' }]
-    },
-    teamB: {
-      id: 'irn', name: 'إيران', shortName: 'IRN', flag: '🇮🇷', flagCode: 'ir',
-      primaryColor: '#239F40', ranking: 22, worldCupWins: 0,
-      players: [
-        { id: 'irn-p1', name: 'M. Taremi', shortName: 'M. Taremi', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'irn-p2', name: 'S. Azmoun', shortName: 'S. Azmoun', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'irn-p3', name: 'A. Jahanbakhsh', shortName: 'Jahanbakhsh', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'irn-p4', name: 'S. Hosseini', shortName: 'Hosseini', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'irn-p5', name: 'A. Beiranvand', shortName: 'Beiranvand', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'D' }, { result: 'W' }, { result: 'D' }, { result: 'L' }, { result: 'W' }]
-    },
-    h2hRecords: [
-      { year: 1998, stage: 'دور المجموعات', highlight: 'مباراة تاريخية', teamAScore: 0, teamBScore: 2, winner: 'B', goals: 2 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '108', valueB: '111', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '85%', valueB: '82%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '34.1', valueB: '33.6', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'nor-fra',
-    date: '2026-06-26T22:00:00.000Z',
-    stadium: 'Gillette Stadium',
-    city: 'Boston',
-    country: 'USA',
-    group: 'I',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'nor', name: 'النرويج', shortName: 'NOR', flag: '🇳🇴', flagCode: 'no',
-      primaryColor: '#EF2B2D', ranking: 35, worldCupWins: 0,
-      players: [
-        { id: 'nor-p1', name: 'E. Haaland', shortName: 'E. Haaland', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'nor-p2', name: 'M. Ødegaard', shortName: 'Ødegaard', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'nor-p3', name: 'A. Sørloth', shortName: 'A. Sørloth', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'nor-p4', name: 'S. Berge', shortName: 'S. Berge', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'nor-p5', name: 'L. Kjær', shortName: 'L. Kjær', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'W' }]
-    },
-    teamB: {
-      id: 'fra', name: 'فرنسا', shortName: 'FRA', flag: '🇫🇷', flagCode: 'fr',
-      primaryColor: '#002654', ranking: 2, worldCupWins: 2,
-      players: [
-        { id: 'fra-p1', name: 'K. Mbappé', shortName: 'K. Mbappé', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'fra-p2', name: 'A. Griezmann', shortName: 'Griezmann', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'fra-p3', name: 'E. Camavinga', shortName: 'Camavinga', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'fra-p4', name: 'T. Hernández', shortName: 'Hernández', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'fra-p5', name: 'W. Saliba', shortName: 'W. Saliba', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }]
-    },
-    h2hRecords: [],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '110', valueB: '115', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '82%', valueB: '93%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '34.7', valueB: '35.2', unit: 'كم/س' }
-    ]
-  },
-  // ═══════════════════════════════════════════════════════════
-  // الجولة الثالثة — 27 يونيو 2026
-  // ═══════════════════════════════════════════════════════════
-  {
-    id: 'jor-arg',
-    date: '2026-06-27T03:00:00.000Z',
-    stadium: 'AT&T Stadium',
-    city: 'Dallas',
-    country: 'USA',
-    group: 'J',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'jor', name: 'الأردن', shortName: 'JOR', flag: '🇯🇴', flagCode: 'jo',
-      primaryColor: '#007A3D', ranking: 63, worldCupWins: 0,
-      players: [
-        { id: 'jor-p1', name: 'Y. Al-Naimat', shortName: 'Al-Naimat', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jor-p2', name: 'B. Alrawabdeh', shortName: 'Alrawabdeh', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jor-p3', name: 'N. Saleh', shortName: 'N. Saleh', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jor-p4', name: 'H. Batran', shortName: 'H. Batran', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'jor-p5', name: 'A. Awawdeh', shortName: 'A. Awawdeh', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'L' }, { result: 'D' }, { result: 'L' }, { result: 'W' }, { result: 'D' }]
-    },
-    teamB: {
-      id: 'arg', name: 'الأرجنتين', shortName: 'ARG', flag: '🇦🇷', flagCode: 'ar',
-      primaryColor: '#74ACDF', ranking: 1, worldCupWins: 3,
-      players: [
-        { id: 'arg-p1', name: 'L. Messi', shortName: 'L. Messi', position: 'FWD', avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/250px-Lionel_Messi_20180626.jpg' },
-        { id: 'arg-p2', name: 'J. Álvarez', shortName: 'J. Álvarez', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'arg-p3', name: 'R. de Paul', shortName: 'R. de Paul', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'arg-p4', name: 'E. Martínez', shortName: 'E. Martínez', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'arg-p5', name: 'C. Romero', shortName: 'C. Romero', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }]
-    },
-    h2hRecords: [],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '105', valueB: '114', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '77%', valueB: '91%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '32.2', valueB: '35.1', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'col-por',
-    date: '2026-06-27T03:00:00.000Z',
-    stadium: 'Hard Rock Stadium',
-    city: 'Miami',
-    country: 'USA',
-    group: 'K',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'col', name: 'كولومبيا', shortName: 'COL', flag: '🇨🇴', flagCode: 'co',
-      primaryColor: '#FCD116', ranking: 11, worldCupWins: 0,
-      players: [
-        { id: 'col-p1', name: 'L. Díaz', shortName: 'L. Díaz', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'col-p2', name: 'J. Lerma', shortName: 'J. Lerma', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'col-p3', name: 'R. Borré', shortName: 'R. Borré', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'col-p4', name: 'Y. Mina', shortName: 'Y. Mina', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'col-p5', name: 'D. Ospina', shortName: 'D. Ospina', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'D' }, { result: 'W' }, { result: 'W' }]
-    },
-    teamB: {
-      id: 'por', name: 'البرتغال', shortName: 'POR', flag: '🇵🇹', flagCode: 'pt',
-      primaryColor: '#006600', ranking: 5, worldCupWins: 0,
-      players: [
-        { id: 'por-p1', name: 'C. Ronaldo', shortName: 'C. Ronaldo', position: 'FWD', avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/250px-Cristiano_Ronaldo_2018.jpg' },
-        { id: 'por-p2', name: 'B. Fernandes', shortName: 'B. Fernandes', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'por-p3', name: 'R. Leão', shortName: 'R. Leão', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'por-p4', name: 'P. Neves', shortName: 'P. Neves', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'por-p5', name: 'R. Carvajal', shortName: 'Carvajal', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'D' }, { result: 'W' }]
-    },
-    h2hRecords: [
-      { year: 2014, stage: 'دور المجموعات', highlight: 'فازت البرتغال 1-0', teamAScore: 0, teamBScore: 1, winner: 'B', goals: 1 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '109', valueB: '112', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '84%', valueB: '89%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '33.8', valueB: '34.9', unit: 'كم/س' }
-    ]
-  },
-  {
-    id: 'pan-eng',
-    date: '2026-06-27T23:00:00.000Z',
-    stadium: 'MetLife Stadium',
-    city: 'New York / New Jersey',
-    country: 'USA',
-    group: 'L',
-    round: 'دور المجموعات — الجولة 3',
-    teamA: {
-      id: 'pan', name: 'بنما', shortName: 'PAN', flag: '🇵🇦', flagCode: 'pa',
-      primaryColor: '#DA121A', ranking: 73, worldCupWins: 0,
-      players: [
-        { id: 'pan-p1', name: 'R. Córdoba', shortName: 'R. Córdoba', position: 'GK', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'pan-p2', name: 'J. Fajardo', shortName: 'J. Fajardo', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'pan-p3', name: 'A. Godoy', shortName: 'A. Godoy', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'pan-p4', name: 'E. Davis', shortName: 'E. Davis', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'pan-p5', name: 'R. Torres', shortName: 'R. Torres', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'L' }, { result: 'D' }, { result: 'L' }, { result: 'D' }, { result: 'L' }]
-    },
-    teamB: {
-      id: 'eng', name: 'إنجلترا', shortName: 'ENG', flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', flagCode: 'gb-eng',
-      primaryColor: '#CF081F', ranking: 4, worldCupWins: 1,
-      players: [
-        { id: 'eng-p1', name: 'J. Bellingham', shortName: 'Bellingham', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'eng-p2', name: 'H. Kane', shortName: 'H. Kane', position: 'FWD', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'eng-p3', name: 'P. Foden', shortName: 'P. Foden', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'eng-p4', name: 'B. Saka', shortName: 'B. Saka', position: 'MID', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-        { id: 'eng-p5', name: 'D. Alexander-Arnold', shortName: 'TAA', position: 'DEF', avatarUrl: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png' },
-      ],
-      form: [{ result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'W' }, { result: 'D' }]
-    },
-    h2hRecords: [
-      { year: 2018, stage: 'دور المجموعات', highlight: 'فازت إنجلترا 6-1', teamAScore: 1, teamBScore: 6, winner: 'B', goals: 7 },
-    ],
-    funStats: [
-      { icon: '🏃', label: 'المسافة المقطوعة', valueA: '103', valueB: '113', unit: 'كم' },
-      { icon: '🎯', label: 'دقة التمرير', valueA: '75%', valueB: '88%' },
-      { icon: '⚡', label: 'السرعة القصوى', valueA: '32.5', valueB: '34.3', unit: 'كم/س' }
-    ]
-  },
 ];
-
 
 // Helper: getMatchById
 export function getMatchById(id: string): Match | undefined {
