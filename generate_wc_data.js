@@ -135,13 +135,18 @@ allMatches.forEach((m, idx) => {
     let hScore = m.home.score ?? undefined;
     let aScore = m.away.score ?? undefined;
 
+    // Only include matches where both teams are in the same group (Group Stage matches)
+    if (teamsMap[homeId].group !== teamsMap[awayId].group) {
+        return; // Skip fictional knockout matches
+    }
+
     matchesData.push({
         id: `match-${idx}`,
         date: m.status.utcTime,
         stadium: 'World Cup Stadium',
         city: 'Host City',
         country: 'Host',
-        group: teamsMap[homeId].group === teamsMap[awayId].group ? teamsMap[homeId].group : 'Knockout',
+        group: teamsMap[homeId].group,
         round: 'دور المجموعات',
         teamAId: homeId,
         teamBId: awayId,
