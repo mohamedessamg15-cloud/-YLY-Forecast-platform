@@ -61,7 +61,7 @@ export default function HomePage() {
           transition={{ delay: 0.6 }}
         >
           {[
-            { value: '72', label: 'مباراة' },
+            { value: '104', label: 'مباراة' },
             { value: '48', label: 'منتخب' },
             { value: '3', label: 'دول مضيفة' },
           ].map((s) => (
@@ -83,7 +83,7 @@ export default function HomePage() {
         >
           <div className="flex-1 h-px" style={{ background: 'rgba(57,255,20,0.1)' }} />
           <span className="text-xs font-display font-semibold text-white/30 tracking-widest">
-            مباريات هذا الأسبوع
+            مباريات قادمة — الجولة الأخيرة
           </span>
           <div className="flex-1 h-px" style={{ background: 'rgba(57,255,20,0.1)' }} />
         </motion.div>
@@ -92,9 +92,8 @@ export default function HomePage() {
           {MATCHES.filter((match) => {
             const matchDate = new Date(match.date);
             const now = new Date();
-            const nextWeek = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
-            // Hide past matches and only show matches occurring within the next 7 days
-            return matchDate >= now && matchDate <= nextWeek;
+            const nextFourDays = new Date(now.getTime() + 4 * 24 * 60 * 60 * 1000);
+            return matchDate >= now && matchDate <= nextFourDays;
           }).map((match, i) => (
             <MatchCard key={match.id} match={match} index={i} />
           ))}
