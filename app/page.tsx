@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import MatchCard from '@/components/MatchCard';
 import ClassicMatches from '@/components/home/ClassicMatches';
+import LiveNews from '@/components/home/LiveNews';
 import Image from 'next/image';
 import { MATCHES } from '@/lib/data/matches';
 
@@ -99,6 +100,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Live News Section */}
+      <LiveNews />
 
       {/* Classic Matches Section */}
       <ClassicMatches />
