@@ -1,24 +1,47 @@
-import Parser from 'rss-parser';
+'use client';
 
-export const revalidate = 3600; // revalidate every hour
+import { useEffect, useState } from 'react';
 
-async function fetchNews() {
-  const parser = new Parser();
-  try {
-    // Fetch Google News RSS for "كأس العالم 2026" in Arabic
-    const feed = await parser.parseURL('https://news.google.com/rss/search?q=كأس+العالم+2026&hl=ar&gl=EG&ceid=EG:ar');
-    return feed.items.slice(0, 4); // get top 4 news items
-  } catch (error) {
-    console.error('Failed to fetch news:', error);
-    return [];
-  }
+interface NewsItem {
+  title: string;
+  link: string;
+  pubDate: string;
 }
 
-export default async function LiveNews() {
-  const newsItems = await fetchNews();
+export default function LiveNews() {
+  const [newsItems, setNewsItems] = useState<NewsItem[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  if (!newsItems || newsItems.length === 0) {
-    return null; // hide section if no news
+  useEffect(() => {
+    async function fetchNews() {
+      try {
+        const rssUrl = encodeURIComponent('https://news.google.com/rss/search?q=كأس+العالم+2026&hl=ar&gl=EG&ceid=EG:ar');
+        const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+        const data = await res.json();
+        
+        if (data.status === 'ok') {
+          setNewsItems(data.items.slice(0, 4));
+        }
+      } catch (error) {
+        console.error('Failed to fetch news:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchNews();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center py-8">
+        <span className="text-neon-green/60 animate-pulse text-sm">جاري تحديث الأخبار...</span>
+      </div>
+    );
+  }
+
+  if (newsItems.length === 0) {
+    return null;
   }
 
   return (
@@ -44,12 +67,12 @@ export default async function LiveNews() {
           >
             <div className="flex flex-col h-full justify-between">
               <div>
-                <h3 className="font-display font-bold text-sm text-white/90 leading-relaxed mb-2 group-hover:text-neon-green transition-colors line-clamp-3">
+                <h3 className="font-display font-bold text-sm text-white/90 leading-relaxed mb-2 group-hover:text-neon-green transition-colors line-clamp-3" dir="rtl">
                   {item.title}
                 </h3>
               </div>
               <div className="flex items-center justify-between mt-4 border-t border-white/5 pt-3">
-                <span className="text-[10px] text-white/40">{item.pubDate ? new Date(item.pubDate).toLocaleDateString('ar-EG', { month: 'short', day: 'numeric' }) : ''}</span>
+                <span className="text-[10px] text-white/40">{item.pubDate ? new Date(item.pubDate.replace(' ', 'T')).toLocaleDateString('ar-EG', { month: 'short', day: 'numeric' }) : ''}</span>
                 <span className="text-[10px] text-wc-cyan group-hover:text-wc-green transition-colors">اقرأ المزيد ←</span>
               </div>
             </div>
