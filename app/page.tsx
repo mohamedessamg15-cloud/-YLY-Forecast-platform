@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import MatchCard from '@/components/MatchCard';
 import ClassicMatches from '@/components/home/ClassicMatches';
 import LiveNews from '@/components/home/LiveNews';
+import GroupsOverview from '@/components/GroupsOverview';
 import Image from 'next/image';
 import { MATCHES } from '@/lib/data/matches';
 
@@ -113,6 +114,9 @@ export default function HomePage() {
           منصة توقعات كأس العالم 2026 · البيانات للأغراض الترفيهية فقط
         </p>
       </footer>
+      {/* Groups Overview */}
+      <GroupsOverview />
+
     </main>
   );
 }
