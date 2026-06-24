@@ -55,9 +55,22 @@ export default function MatchCard({ match, index }: { match: Match; index: numbe
           {/* Teams - vertical on mobile, horizontal on sm+ */}
           <div className="p-4 sm:p-6">
 
-            {/* Countdown centered at top */}
+            {/* Top Match Status / Countdown */}
             <div className="flex justify-center mb-3">
-              <CountdownTimer targetDate={match.date} />
+              {match.status === 'Finished' ? (
+                <div className="px-3 py-1 rounded-full bg-white/10 border border-white/20">
+                  <span className="text-xs font-bold text-white tracking-widest uppercase">انتهت (FT)</span>
+                </div>
+              ) : match.status === 'Live' ? (
+                <div className="px-3 py-1 rounded-full bg-red-500/20 border border-red-500/50 animate-pulse">
+                  <span className="text-xs font-bold text-red-500 tracking-widest uppercase flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                    مباشر
+                  </span>
+                </div>
+              ) : (
+                <CountdownTimer targetDate={match.date} />
+              )}
             </div>
 
             {/* Teams row */}
@@ -74,9 +87,15 @@ export default function MatchCard({ match, index }: { match: Match; index: numbe
                 <FormDots form={match.teamA.form} />
               </div>
 
-              {/* VS Badge */}
-              <div className="flex-shrink-0 px-2 sm:px-4 py-2 rounded-xl bg-black/40 border border-white/5 flex flex-col items-center">
-                <span className="text-lg sm:text-xl font-display font-black text-wc-magenta italic">VS</span>
+              {/* VS Badge / Score */}
+              <div className="flex-shrink-0 px-2 sm:px-4 py-2 rounded-xl bg-black/40 border border-white/5 flex flex-col items-center justify-center min-w-[60px] sm:min-w-[80px]">
+                {match.status === 'Finished' || match.status === 'Live' ? (
+                  <span className="text-2xl sm:text-3xl font-display font-black text-white tracking-widest">
+                    {match.homeScore} - {match.awayScore}
+                  </span>
+                ) : (
+                  <span className="text-lg sm:text-xl font-display font-black text-wc-magenta italic">VS</span>
+                )}
               </div>
 
               {/* Team B */}

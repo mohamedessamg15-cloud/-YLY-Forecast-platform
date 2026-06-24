@@ -3,7 +3,10 @@ import type { Match, Team, Player } from './types';
 export const MATCHES: Match[] = [
   {
     id: 'mex-kor',
-    date: '2026-06-25T16:00:00.000Z',
+    date: '2026-06-19T01:00:00Z',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 0,
     stadium: 'Azteca',
     city: 'Mexico City',
     country: 'Mexico',
@@ -70,7 +73,10 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'cze-rsa',
-    date: '2026-06-25T16:00:00.000Z',
+    date: '2026-06-18T16:00:00Z',
+    status: 'Finished',
+    homeScore: 1,
+    awayScore: 1,
     stadium: 'SoFi Stadium',
     city: 'Los Angeles',
     country: 'USA',
@@ -402,7 +408,8 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'can-sui',
-    date: '2026-06-27T16:00:00.000Z',
+    date: '2026-06-24T19:00:00.000Z',
+    status: 'Upcoming',
     stadium: "Levi's Stadium",
     city: 'San Francisco',
     country: 'USA',
@@ -467,7 +474,8 @@ export const MATCHES: Match[] = [
   },
   {
     id: 'bih-qat',
-    date: '2026-06-27T16:00:00.000Z',
+    date: '2026-06-24T19:00:00.000Z',
+    status: 'Upcoming',
     stadium: 'NRG Stadium',
     city: 'Houston',
     country: 'USA',
