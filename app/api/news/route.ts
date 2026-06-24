@@ -26,7 +26,7 @@ export async function GET() {
     const dateRegex = /<pubDate>([\s\S]*?)<\/pubDate>/;
     const sourceRegex = /<source[^>]*>([\s\S]*?)<\/source>/;
     
-    const items = [];
+    const items: any[] = [];
     let match;
     
     // Pixabay fallback images

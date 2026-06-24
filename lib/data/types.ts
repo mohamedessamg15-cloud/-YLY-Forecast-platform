@@ -54,6 +54,9 @@ export interface Match {
   country: string;
   group: string;
   round: string;
+  status: 'Upcoming' | 'Live' | 'Finished';
+  homeScore?: number;
+  awayScore?: number;
   teamA: Team;
   teamB: Team;
   h2hRecords: H2HRecord[];

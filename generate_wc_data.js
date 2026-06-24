@@ -180,7 +180,7 @@ for (const [id, t] of Object.entries(teamsMap)) {
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: ${t.playersString}
   },\n`;
 }

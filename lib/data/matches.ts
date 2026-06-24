@@ -24,12 +24,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'mx',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 38,
+    ranking: 16,
     group: 'A',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'kor': {
@@ -40,12 +40,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'kr',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 4,
+    ranking: 33,
     group: 'A',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'cze': {
@@ -56,12 +56,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'cz',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 45,
+    ranking: 7,
     group: 'A',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'rsa': {
@@ -72,12 +72,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'za',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 9,
+    ranking: 42,
     group: 'A',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'can': {
@@ -88,12 +88,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ca',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 27,
+    ranking: 28,
     group: 'B',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'sui': {
@@ -104,12 +104,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ch',
     primaryColor: '#319795',
     secondaryColor: '#ffffff',
-    ranking: 50,
+    ranking: 45,
     group: 'B',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'bih': {
@@ -120,12 +120,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ba',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 19,
+    ranking: 49,
     group: 'B',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'qat': {
@@ -136,12 +136,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'qa',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 7,
+    ranking: 48,
     group: 'B',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'bra': {
@@ -152,12 +152,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'br',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 1,
+    ranking: 12,
     group: 'C',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'mor': {
@@ -168,12 +168,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ma',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 26,
+    ranking: 2,
     group: 'C',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'sco': {
@@ -184,12 +184,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'gb-sct',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 16,
+    ranking: 23,
     group: 'C',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'hai': {
@@ -200,12 +200,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ht',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 42,
+    ranking: 10,
     group: 'C',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'usa': {
@@ -216,12 +216,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'us',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 24,
+    ranking: 32,
     group: 'D',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'aus': {
@@ -232,12 +232,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'at',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 33,
+    ranking: 16,
     group: 'J',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'par': {
@@ -248,12 +248,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'py',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 17,
+    ranking: 6,
     group: 'D',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'tur': {
@@ -264,12 +264,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'tr',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 42,
+    ranking: 32,
     group: 'D',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'ger': {
@@ -280,12 +280,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'de',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 32,
+    ranking: 33,
     group: 'E',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'ivo': {
@@ -296,12 +296,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ci',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 44,
+    ranking: 2,
     group: 'E',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'ecu': {
@@ -312,12 +312,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ec',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 40,
+    ranking: 1,
     group: 'E',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'cur': {
@@ -328,12 +328,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'cw',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 26,
+    ranking: 43,
     group: 'E',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'net': {
@@ -344,12 +344,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'nl',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 37,
+    ranking: 28,
     group: 'F',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'jap': {
@@ -360,12 +360,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'jp',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 18,
+    ranking: 16,
     group: 'F',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'swe': {
@@ -376,12 +376,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'se',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 3,
+    ranking: 39,
     group: 'F',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'tun': {
@@ -392,12 +392,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'tn',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 37,
+    ranking: 20,
     group: 'F',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'egy': {
@@ -408,12 +408,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'eg',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 14,
+    ranking: 20,
     group: 'G',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'ira': {
@@ -424,12 +424,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'iq',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 11,
+    ranking: 48,
     group: 'I',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'bel': {
@@ -440,12 +440,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'be',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 31,
+    ranking: 1,
     group: 'G',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'new': {
@@ -456,12 +456,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'nz',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 28,
+    ranking: 44,
     group: 'G',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'spa': {
@@ -472,12 +472,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'es',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 38,
+    ranking: 3,
     group: 'H',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'uru': {
@@ -488,12 +488,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'uy',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 18,
+    ranking: 22,
     group: 'H',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'cap': {
@@ -504,12 +504,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'cv',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 37,
+    ranking: 40,
     group: 'H',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'sau': {
@@ -520,12 +520,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'sa',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 35,
+    ranking: 16,
     group: 'H',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'fra': {
@@ -541,7 +541,7 @@ export const TEAMS_MAP: Record<string, Team> = {
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'nor': {
@@ -552,12 +552,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'no',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 9,
+    ranking: 19,
     group: 'I',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'sen': {
@@ -568,12 +568,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'sn',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 39,
+    ranking: 23,
     group: 'I',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'arg': {
@@ -584,12 +584,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'ar',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 36,
+    ranking: 8,
     group: 'J',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'alg': {
@@ -600,12 +600,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'dz',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 48,
+    ranking: 47,
     group: 'J',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'jor': {
@@ -616,12 +616,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'jo',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 2,
+    ranking: 11,
     group: 'J',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'col': {
@@ -632,12 +632,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'co',
     primaryColor: '#3182CE',
     secondaryColor: '#ffffff',
-    ranking: 4,
+    ranking: 21,
     group: 'K',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'por': {
@@ -648,12 +648,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'pt',
     primaryColor: '#319795',
     secondaryColor: '#ffffff',
-    ranking: 5,
+    ranking: 2,
     group: 'K',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'drc': {
@@ -664,12 +664,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'cd',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 18,
+    ranking: 25,
     group: 'K',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'uzb': {
@@ -680,12 +680,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'uz',
     primaryColor: '#319795',
     secondaryColor: '#ffffff',
-    ranking: 8,
+    ranking: 47,
     group: 'K',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'eng': {
@@ -696,12 +696,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'gb-eng',
     primaryColor: '#805AD5',
     secondaryColor: '#ffffff',
-    ranking: 34,
+    ranking: 33,
     group: 'L',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'gha': {
@@ -712,12 +712,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'gh',
     primaryColor: '#D69E2E',
     secondaryColor: '#ffffff',
-    ranking: 12,
+    ranking: 14,
     group: 'L',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'cro': {
@@ -728,12 +728,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'hr',
     primaryColor: '#E53E3E',
     secondaryColor: '#ffffff',
-    ranking: 49,
+    ranking: 9,
     group: 'L',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
   'pan': {
@@ -744,12 +744,12 @@ export const TEAMS_MAP: Record<string, Team> = {
     flagCode: 'pa',
     primaryColor: '#38A169',
     secondaryColor: '#ffffff',
-    ranking: 16,
+    ranking: 6,
     group: 'L',
     coach: 'Manager',
     worldCupAppearances: 0,
     worldCupWins: 0,
-    form: [{ result: 'W' }, { result: 'D' }, { result: 'W' }],
+    form: [{ result: 'W', opponent: 'Unk', score: '1-0' }, { result: 'D', opponent: 'Unk', score: '0-0' }, { result: 'W', opponent: 'Unk', score: '2-1' }],
     players: []
   },
 };

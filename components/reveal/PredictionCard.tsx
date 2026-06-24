@@ -23,7 +23,7 @@ export default function PredictionCard({ match, prediction }: PredictionCardProp
     if (!match.h2hRecords || match.h2hRecords.length === 0) return 50;
     
     const predictedDiff = prediction.scoreA - prediction.scoreB;
-    const predictedWinner = predictedDiff > 0 ? 'teamA' : predictedDiff < 0 ? 'teamB' : 'draw';
+    const predictedWinner = predictedDiff > 0 ? 'A' : predictedDiff < 0 ? 'B' : 'D';
     
     const historicalWinners = match.h2hRecords.map(r => r.winner);
     
